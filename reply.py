@@ -5,7 +5,6 @@ BOT_PREFIX = os.environ.get('prefix')
 TOKEN = os.environ.get('TOKEN')
 client = Bot(command_prefix=BOT_PREFIX)
 
-
 @client.event
 async def on_message(message):
     # we do not want the bot to reply to itself
