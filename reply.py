@@ -1,8 +1,10 @@
-import discord
-client = discord.Client()
+import os, discord
+from discord.ext.commands import Bot
 
-import boto
-TOKEN = boto.connect_s3()
+BOT_PREFIX = os.environ['prefix']
+TOKEN = os.environ['TOKEN']
+client = Bot(command_prefix=BOT_PREFIX)
+
 
 @client.event
 async def on_message(message):
