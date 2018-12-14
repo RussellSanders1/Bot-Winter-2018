@@ -1,1 +1,1 @@
-web : gunicorn reply:app
+worker: python reply.py
