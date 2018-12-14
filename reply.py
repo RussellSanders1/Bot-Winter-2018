@@ -1,7 +1,7 @@
 import os, discord
 from discord.ext.commands import Bot
 
-BOT_PREFIX = process.environ.get('prefix')
+BOT_PREFIX = os.environ.get('prefix')
 TOKEN = os.environ.get('TOKEN')
 client = Bot(command_prefix=BOT_PREFIX)
 
