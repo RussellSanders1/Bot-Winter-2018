@@ -1,8 +1,8 @@
 import discord
-
 client = discord.Client()
 
-TOKEN = ''
+import boto
+TOKEN = boto.connect_s3()
 
 @client.event
 async def on_message(message):
