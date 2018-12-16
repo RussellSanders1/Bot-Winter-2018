@@ -1,4 +1,4 @@
-import flask, os, discord
+import os
 from discord.ext.commands import Bot
 
 BOT_PREFIX = os.environ.get('prefix')
@@ -15,11 +15,13 @@ async def on_message(message):
         msg = 'Hello {0.author.mention}'.format(message)
         await client.send_message(message.channel, msg)
 
+
 @client.event
 async def on_ready():
     print('Logged in as')
     print(client.user.name)
     print(client.user.id)
     print('------')
+
 
 client.run(TOKEN)
