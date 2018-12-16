@@ -1,1 +1,1 @@
-worker: python reply.py
+worker: python playlist.py
