@@ -1,3 +1,7 @@
 venv/
 .idea/
 
+playlist.py
+__pycache__/Music.cpython-36.pyc
+ffmpeg.exe
+Music.py
