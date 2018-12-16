@@ -1,7 +1,5 @@
-aiohttp>=1.0.0,<1.1.0
-websockets>=3.1,<4.0
+aiohttp
+websockets
 discord
 PyNaCl
 youtube_dl
-chardet
-flask
